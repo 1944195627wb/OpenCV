@@ -1,0 +1,12 @@
+import cv2
+img = cv2.imread("D:/photo/1.png")
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+rgb = cv2.cvtColor(gray,cv2.COLOR_GRAY2RGB)
+print("img.shape",img.shape)
+print("gray.shape",gray.shape)
+print("rgb.shape",rgb.shape)
+cv2.imshow("img",img)
+cv2.imshow("gray",gray)
+cv2.imshow("rgb",rgb)
+cv2.waitKey()
+cv2.destroyAllWindows()
